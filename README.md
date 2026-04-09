@@ -4,6 +4,24 @@
 
 
 
+## 📖 Table of Contents
+     1. Objective
+     2. Dataset
+     3. Workflow
+          - Data Preprocessing
+          - Model Selection
+          - Hyperparameter Tuning
+          - Threshold Tuning
+          - Model Evaluation
+          - Feature Importance
+          - Final Model & Deployment
+          - Business Recommendations
+          - Additional Notes
+    4. Project Structure
+
+
+
+
 ## 🎯 Objective
 
 The goal of this project is to **help the bank target potential subscribers efficiently**, maximizing marketing campaign effectiveness while minimizing wasted resources.
