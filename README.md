@@ -122,4 +122,3 @@ Ready for: Future predictions or deployment in production (API, web service, bat
 Model focuses on recall for minority class (subscribers) to reduce missed opportunities.
 
 Precision is moderately lower – meaning some predicted subscribers may not convert; acceptable for mass marketing campaigns.
-<img width="987" height="32766" alt="image" src="https://github.com/user-attachments/assets/04335956-aec7-4e0c-8dbb-72daaf7438fe" />
