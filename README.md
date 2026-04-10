@@ -124,7 +124,7 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 * Moderate precision → some false positives acceptable for broad campaigns
 
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ├── data/
