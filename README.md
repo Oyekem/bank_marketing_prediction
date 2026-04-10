@@ -5,6 +5,8 @@
 **Predicting which bank clients are likely to subscribe to a term deposit using demographic, financial, and marketing data.**
 
 
+
+
 ## 📖 Table of Contents
 
 1. [Objective](#objective)
@@ -22,11 +24,13 @@
 4. [Project Structure](#project-structure)
 
 
+
 ## 🎯 Objective
 
 The goal of this project is to **help the bank target potential subscribers efficiently**, maximizing marketing campaign effectiveness while minimizing wasted resources.
 
 We predict whether a client will subscribe to a term deposit (`y = 1`) using a mix of **numeric and categorical features**.
+
 
 
 ## 📊 Dataset
@@ -40,6 +44,7 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 * **Challenge:** Imbalanced dataset (subscribers are minority class)
 
 
+
 ## 🛠 Workflow
 
 ## 1️⃣ Data Preprocessing
@@ -51,27 +56,23 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 
 **Outcome:** Preprocessed dataset ready for model training
 
-
 ## 2️⃣ Model Selection
 
 * **Candidate Models:** Logistic Regression, Random Forest, XGBoost
 * **Evaluation Metrics:** Accuracy, Precision, Recall, F1-score, ROC-AUC
 * **Final Model:** **XGBoost** – best balance of recall and F1-score for minority class
 
-
-### 3️⃣ Hyperparameter Tuning
+## 3️⃣ Hyperparameter Tuning
 
 * **Method:** `RandomizedSearchCV`
 * **Tuned Parameters:** `n_estimators`, `max_depth`, `learning_rate`, `subsample`, `colsample_bytree`, `gamma`, `min_child_weight`
 * **Outcome:** Improved recall for subscribers
-
 
 ## 4️⃣ Threshold Tuning
 
 * **Default Threshold:** 0.5
 * **Optimal Threshold:** 0.55
 * **Rationale:** Increases recall for subscribers while maintaining reasonable precision, minimizing missed opportunities in marketing campaigns
-
 
 ## 5️⃣ Model Evaluation
 
@@ -121,7 +122,6 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 
 * Model focuses on **recall for minority class** → reduces missed subscribers
 * Moderate precision → some false positives acceptable for broad campaigns
-
 
 
 ## 📂 Project Structure
