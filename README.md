@@ -6,8 +6,8 @@
 
 
 ## 📖 Table of Contents
-[Table of Contents](#table-of-content)\n
-     1. [Objectives](#objective) \n
+[Table of Contents](#table-of-content)
+     1. [Objective](#objective) 
      2. [Dataset](#dataset)
      3. [Workflow](#-workflow)
           - [Data Preprocessing](#data-processing)
