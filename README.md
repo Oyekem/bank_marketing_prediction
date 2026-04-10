@@ -7,16 +7,16 @@
 
 
 ## 📖 Table of Contents
-     1. -[Objectives](#-objective)
-     2. -[Dataset](#-dataset)
+     1. -[Objectives](#objective)
+     2. -[Dataset](#dataset)
      3. -[Workflow](#-workflow)
-          - [Data Preprocessing](#-data-processing)
-          - [Model Selection](#-model-selection)
-          - [Hyperparameter Tuning](#-hyperparameter-tuning)
+          - [Data Preprocessing](#data-processing)
+          - [Model Selection](#model-selection)
+          - [Hyperparameter Tuning](#hyperparameter-tuning)
           - [Threshold Tuning](#-threshold-tuning)
           - [Model Evaluation](#-model-evaluation)
           - [Feature Importance](#-feature-importance)
-          - [Final Model & Deployment](#-final-model-&-deployment)
+          - [Final Model & Deployment](#-final-model--deployment)
           - [Business Recommendations](#-business-recommendations)
           - [Additional Notes](#-additional-notes)
     4. [Project Structure](#-project-structure)
