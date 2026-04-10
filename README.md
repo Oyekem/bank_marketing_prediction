@@ -5,7 +5,7 @@
 
 
 ## 📖 Table of Contents
-     1. Objective
+     1. objective (Objective)
      2. Dataset
      3. Workflow
           - Data Preprocessing
@@ -42,7 +42,7 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 
 ## 🛠 Workflow
 
-### 1️⃣ Data Preprocessing
+## 1️⃣ Data Preprocessing
 
 * **Encoding:** `OneHotEncoder` for categorical variables
 * **Scaling:** `StandardScaler` for numeric features
@@ -52,7 +52,7 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 **Outcome:** Preprocessed dataset ready for model training
 
 
-### 2️⃣ Model Selection
+## 2️⃣ Model Selection
 
 * **Candidate Models:** Logistic Regression, Random Forest, XGBoost
 * **Evaluation Metrics:** Accuracy, Precision, Recall, F1-score, ROC-AUC
@@ -66,21 +66,21 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 * **Outcome:** Improved recall for subscribers
 
 
-### 4️⃣ Threshold Tuning
+## 4️⃣ Threshold Tuning
 
 * **Default Threshold:** 0.5
 * **Optimal Threshold:** 0.55
 * **Rationale:** Increases recall for subscribers while maintaining reasonable precision, minimizing missed opportunities in marketing campaigns
 
 
-### 5️⃣ Model Evaluation
+## 5️⃣ Model Evaluation
 
 * **ROC-AUC:** 0.924 → Strong discriminative ability
 * **Precision-Recall Curve:** Confirms trade-off between recall and precision
 * **Confusion Matrix:** Accurately identifies most subscribers while maintaining high accuracy for non-subscribers
 
 
-### 6️⃣ Feature Importance
+## 6️⃣ Feature Importance
 
 **Top 10 Predictors from XGBoost:**
 
@@ -102,14 +102,14 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 * Target marketing by age, job type, and contact method
 
 
-### 7️⃣ Final Model & Deployment
+## 7️⃣ Final Model & Deployment
 
 * **Pipeline Saved:** `models/xgboost_bank_pipeline.pkl`
 * **Includes:** Data preprocessing + XGBoost model
 * **Ready For:** Future predictions, production deployment, API integration
 
 
-### 8️⃣ Business Recommendations
+## 8️⃣ Business Recommendations
 
 * Prioritize clients flagged as likely subscribers to maximize ROI
 * Target marketing campaigns based on **duration**, **balance**, and engagement indicators
@@ -117,14 +117,14 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 * Adjust thresholds depending on campaign risk tolerance
 
 
-### 9️⃣ Notes
+## 9️⃣ Notes
 
 * Model focuses on **recall for minority class** → reduces missed subscribers
 * Moderate precision → some false positives acceptable for broad campaigns
 
----
 
-### 📂 Project Structure
+
+## 📂 Project Structure
 
 ```
 ├── data/
