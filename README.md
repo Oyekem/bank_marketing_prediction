@@ -9,23 +9,23 @@
 
 ## 📖 Table of Contents
 
-1. [Objective](#objective)
-2. [Dataset](#dataset)
-3. [Workflow](#workflow)
-   - [Data Preprocessing](#data-preprocessing)
-   - [Model Selection](#model-selection)
-   - [Hyperparameter Tuning](#hyperparameter-tuning)
-   - [Threshold Tuning](#threshold-tuning)
-   - [Model Evaluation](#model-evaluation)
-   - [Feature Importance](#feature-importance)
-   - [Final Model & Deployment](#final-model--deployment)
-   - [Business Recommendations](#business-recommendations)
-   - [Additional Notes](#additional-notes)
+1. [🎯 Objective](#objective)
+2. [📊 Dataset](#dataset)
+3. [🛠 Workflow](#workflow)
+   - [1️. Data Preprocessing](#data-preprocessing)
+   - [2. Model Selection](#model-selection)
+   - [3. Hyperparameter Tuning](#hyperparameter-tuning)
+   - [4. Threshold Tuning](#threshold-tuning)
+   - [5. Model Evaluation](#model-evaluation)
+   - [6. Feature Importance](#feature-importance)
+   - [7. Final Model & Deployment](#final-model--deployment)
+   - [8. Business Recommendations](#business-recommendations)
+   - [9. Additional Notes](#additional-notes)
 4. [Project Structure](#project-structure)
 
 
 
-## 🎯 Objective
+## Objective
 
 The goal of this project is to **help the bank target potential subscribers efficiently**, maximizing marketing campaign effectiveness while minimizing wasted resources.
 
@@ -33,7 +33,7 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 
 
 
-## 📊 Dataset
+## Dataset
 
 * **Source:** Bank marketing dataset
 * **Features:** Demographic, financial, and campaign-related
@@ -45,9 +45,9 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 
 
 
-## 🛠 Workflow
+## Workflow
 
-## 1️⃣ Data Preprocessing
+## Data Preprocessing
 
 * **Encoding:** `OneHotEncoder` for categorical variables
 * **Scaling:** `StandardScaler` for numeric features
@@ -56,32 +56,32 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 
 **Outcome:** Preprocessed dataset ready for model training
 
-## 2️⃣ Model Selection
+## Model Selection
 
 * **Candidate Models:** Logistic Regression, Random Forest, XGBoost
 * **Evaluation Metrics:** Accuracy, Precision, Recall, F1-score, ROC-AUC
 * **Final Model:** **XGBoost** – best balance of recall and F1-score for minority class
 
-## 3️⃣ Hyperparameter Tuning
+## Hyperparameter Tuning
 
 * **Method:** `RandomizedSearchCV`
 * **Tuned Parameters:** `n_estimators`, `max_depth`, `learning_rate`, `subsample`, `colsample_bytree`, `gamma`, `min_child_weight`
 * **Outcome:** Improved recall for subscribers
 
-## 4️⃣ Threshold Tuning
+## Threshold Tuning
 
 * **Default Threshold:** 0.5
 * **Optimal Threshold:** 0.55
 * **Rationale:** Increases recall for subscribers while maintaining reasonable precision, minimizing missed opportunities in marketing campaigns
 
-## 5️⃣ Model Evaluation
+## Model Evaluation
 
 * **ROC-AUC:** 0.924 → Strong discriminative ability
 * **Precision-Recall Curve:** Confirms trade-off between recall and precision
 * **Confusion Matrix:** Accurately identifies most subscribers while maintaining high accuracy for non-subscribers
 
 
-## 6️⃣ Feature Importance
+## Feature Importance
 
 **Top 10 Predictors from XGBoost:**
 
@@ -103,14 +103,14 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 * Target marketing by age, job type, and contact method
 
 
-## 7️⃣ Final Model & Deployment
+## Final Model & Deployment
 
 * **Pipeline Saved:** `models/xgboost_bank_pipeline.pkl`
 * **Includes:** Data preprocessing + XGBoost model
 * **Ready For:** Future predictions, production deployment, API integration
 
 
-## 8️⃣ Business Recommendations
+## Business Recommendations
 
 * Prioritize clients flagged as likely subscribers to maximize ROI
 * Target marketing campaigns based on **duration**, **balance**, and engagement indicators
@@ -118,7 +118,7 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 * Adjust thresholds depending on campaign risk tolerance
 
 
-## 9️⃣ Notes
+## Notes
 
 * Model focuses on **recall for minority class** → reduces missed subscribers
 * Moderate precision → some false positives acceptable for broad campaigns
