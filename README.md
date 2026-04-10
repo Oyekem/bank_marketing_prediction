@@ -132,7 +132,7 @@ We predict whether a client will subscribe to a term deposit (`y = 1`) using a m
 ├── models/
 │   └── xgboost_bank_pipeline.pkl
 ├── notebooks/
-│   └── exploratory_analysis.ipynb
+│   └── bank_marketing_prediction.ipynb
 ├── src/
 │   └── preprocessing.py
 │   └── modeling.py
