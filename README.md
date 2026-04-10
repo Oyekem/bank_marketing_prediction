@@ -7,9 +7,9 @@
 
 
 ## 📖 Table of Contents
-     1. [Objectives](#-objective)
-     2. [Dataset](#-dataset)
-     3. [Workflow](#-workflow)
+     1. -[Objectives](#-objective)
+     2. -[Dataset](#-dataset)
+     3. -[Workflow](#-workflow)
           - [Data Preprocessing](#-data-processing)
           - [Model Selection](#-model-selection)
           - [Hyperparameter Tuning](#-hyperparameter-tuning)
