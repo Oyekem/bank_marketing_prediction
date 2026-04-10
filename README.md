@@ -5,8 +5,8 @@
 **Predicting which bank clients are likely to subscribe to a term deposit using demographic, financial, and marketing data.**
 
 
-## 📖 Table of Contents
-[Table of Contents](#table-of-content)
+## 📖 Table of Content
+[Table of Content](#table-of-content)
      1. [Objective](#objective) 
      2. [Dataset](#dataset)
      3. [Workflow](#-workflow)
@@ -22,8 +22,8 @@
     4. [Project Structure](#project-structure)
 
 
-## 📖 Table of Contents
-[Table of Contents](#table-of-content)
+## 📖 Table of Content
+[Table of Content](#table-of-content)
 
      1. [Objectives](#objective)
      2. [Dataset](#dataset)
