@@ -7,6 +7,7 @@
 
 
 ## 📖 Table of Contents
+[Table of Contents](#table-of-content)
      1. [Objectives](#objective)
      2. [Dataset](#dataset)
      3. [Workflow](#-workflow)
@@ -20,7 +21,6 @@
           - [Business Recommendations](#business-recommendations)
           - [Additional Notes](#additional-notes)
     4. [Project Structure](#project-structure)
-
 
 
 
